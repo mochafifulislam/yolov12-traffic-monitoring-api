@@ -11,7 +11,7 @@ st.caption("Proyek Skripsi S1 Matematika Universitas Brawijaya | Deploy Demo")
 
 @st.cache_resource
 def load_yolo_model():
-    return YOLO("app/models/best.pt") # atau 'best.pt' sesuai lokasi weights Anda
+    return YOLO("app/best.pt") # atau 'best.pt' sesuai lokasi weights Anda
 
 try:
     model = load_yolo_model()
